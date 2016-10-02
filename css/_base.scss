@@ -1,3 +1,98 @@
+$grey: #424651;
+$light-grey: #d3d3d3;
+$light-blue: #C1D7EF;
+$sm-screen: 520px;
+$md-screen: 990px;
+
+body {
+	margin-bottom: 4em;
+	@include outer-container(1000px);}
+
+h1, h2, h3, h4 {
+	font-family: 'Josefin Slab', serif;
+	padding-left: 25px;
+}
+
 h1 {
-	color: red;
+	background-color: $light-blue;
+	color: white;
+	margin: 0;
+	padding: 1em 25px;
+}
+
+
+p {
+	color: $grey;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	@media (min-width $sm-screen) {
+		padding-right: none; 	
+	}
+}
+
+.hero-image {
+	width: 100%;
+}
+
+.module--centered {
+	text-align: center;
+}
+
+.margin {
+	img {
+		margin-right: 1em;
+		margin-bottom: 1em;
+	}
+		@media (min-width: $md-screen) {
+			margin-bottom: 0;
+		}
+	}
+
+.module--centered-secondary {
+	text-align: center;
+}
+
+.module--vertical-centered {
+	margin-bottom: 14%;
+}
+
+.module--vertical {
+	width: 100%;
+
+	@media (min-width: $md-screen) {
+		display: inline;
+	}
+}
+
+.img-right {
+	float: right;
+	height: 300px;
+	margin: 20px 10px;
+	width: 200px;
+}
+
+.right {
+	margin-right: 44px;
+}
+
+.module-button {
+	background-color: $light-blue;
+	border-radius: 6px;
+	margin: 0 auto;
+	padding: 1em;
+	text-align: center;
+	width: 10em;
+
+  &:hover {
+    background: rgba(10,20,200,0.4);
+    transition: all 0.15s linear;
+  }
+
+	a {
+		color: white;
+		font-family: 'Open Sans', sans-serif;
+		text-decoration: none;
+	}
 }
