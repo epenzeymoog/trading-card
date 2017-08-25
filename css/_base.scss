@@ -1,6 +1,6 @@
 $grey: #424651;
 $light-grey: #d3d3d3;
-$light-blue: #C1D7EF;
+$light-blue: #0070ff;
 $sm-screen: 520px;
 $md-screen: 990px;
 
@@ -28,7 +28,7 @@ p {
 	padding-right: 25px;
 
 	@media (min-width $sm-screen) {
-		padding-right: none; 	
+		padding-right: none;
 	}
 }
 
@@ -86,7 +86,8 @@ p {
 	width: 10em;
 
   &:hover {
-    background: rgba(10,20,200,0.4);
+    background: #549FFF;
+    cursor: pointer;
     transition: all 0.15s linear;
   }
 
